@@ -6,4 +6,6 @@ app.get('/projects', (request, response)=>{
   return response.json({message: 'olá mundo'});
 })
 
-app.listen(3333);
+app.listen(3333, ()=>{
+  console.log("🚀BackEnd started");
+});
