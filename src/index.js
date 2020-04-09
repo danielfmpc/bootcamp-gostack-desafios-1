@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 app.get('/projects', (request, response)=>{
-  return response.send('hellow word');
+  return response.json({message: 'hello world'});
 })
 
 app.listen(3333);
